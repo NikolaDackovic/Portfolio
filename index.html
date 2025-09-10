@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Nikole Dackovića, frontend developera specijalizovanog za React i moderni web razvoj.">
+    <meta name="keywords" content="frontend developer, React, JavaScript, web razvoj, portfolio">
+    <title>Nikola Dacković Portfolio</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./src/assets/pictures/ND.png" type="image/png" sizes="64x64">
+    <link rel="apple-touch-icon" href="./src/assets/pictures/ND.png" sizes="180x180">
+    <link rel="icon" href="./src/assets/pictures/ND.png" type="image/png" sizes="32x32">
+</head>
+<body id="home" class="dark">
+
+<!--LOADERS-->
+<div class="loader-wrapper">
+    <div class="loader">
+        <span class="loader-text">Loading</span>
+        <span class="load"></span>
+    </div>
+</div>
+
+<div class="portfolio-preview">
+
+    <!-- Header & Navigation -->
+    <header class="preview-header">
+        <img id="logo" src="./src/assets/pictures/ndnd.png" alt="Logo Nikole Dackovića" class="logo">
+        <button id="hamburger-toggle" class="btn hamburger-btn" aria-label="Otvori navigacioni meni">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="preview-nav">
+            <a href="#home" id="home-link" class="nav-item active" aria-current="page" data-text-sr="Početna" data-text-en="Home">
+                <i class="fas fa-home"></i> Početna
+            </a>
+            <a href="#about" id="about-link" class="nav-item" data-text-sr="O meni" data-text-en="About Me">
+                <i class="fas fa-user"></i> O meni
+            </a>
+            <a href="#projects" id="projects-link" class="nav-item" data-text-sr="Projekti" data-text-en="Projects">
+                <i class="fas fa-briefcase"></i> Projekti
+            </a>
+            <a href="#contact" id="contact-link" class="nav-item" data-text-sr="Kontakt" data-text-en="Contact">
+                <i class="fas fa-envelope"></i> Kontakt
+            </a>
+        </nav>
+        <div class="header-right-controls">
+            <button id="theme-toggle" class="btn" aria-label="Promeni temu"><i class="fas fa-moon"></i></button>
+            <button id="lang-toggle" class="btn lang-btn">EN / SR</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="preview-content">
+        <!-- Hero Section -->
+        <section class="hero-preview" id="hero">
+            <div class="hero-layout">
+                <div class="hero-left">
+                    <div class="image-container">
+                        <img src="./src/assets/pictures/slika.jpg" alt="Portret Nikole Dackovića, frontend developera" class="profile-img" loading="lazy">
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-work-btn">Vidi moj rad</a>
+                        <a href="./src/assets/pictures/cv.pdf" class="btn cv-btn" download>Preuzmi moj CV</a>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <h2 id="hero-title">Pozdrav, ja sam <span>Nikola Dacković</span></h2>
+                    <p id="header-desc"><strong>Developer | React | Modern Web Development</strong></p>
+                    <p id="hero-desc">Strastveni frontend developer s fokusom na moderni i responzivni web development</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="preview-section about-section scroll-reveal" id="about">
+            <h2 id="about-title">O meni</h2>
+            <p id="about-desc"></p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="preview-section skills-section scroll-reveal" id="skills">
+            <h2 id="skills-title">Veštine</h2>
+            <div class="skills-container">
+                <div class="skill skill-html"><i class="fab fa-html5"></i> HTML</div>
+                <div class="skill skill-css"><i class="fab fa-css3-alt"></i> CSS</div>
+                <div class="skill skill-js"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill skill-react"><i class="fab fa-react"></i> React</div>
+                <div class="skill skill-git"><i class="fab fa-git-alt"></i> Git</div>
+                <div class="skill skill-api"><i class="fas fa-server"></i> API</div>
+                <div class="skill skill-github"><i class="fab fa-github"></i> GitHub</div>
+                <div class="skill skill-figma"><i class="fab fa-figma"></i> Figma</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="preview-section projects-section scroll-reveal" id="projects">
+            <h2 id="projects-title">Projekti</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="./src/assets/pictures/project1.png" alt="Prikaz Dice Game projekta" class="project-img" loading="lazy">
+                    <div class="project-info">
+                        <h4 id="proj1-title">Igra kockica</h4>
+                        <p id="proj1-desc">Jednostavna JavaScript igrica za dvoje igrača koja se zasniva na bacanju kockica i skupljanju poena.</p>
+                        <p class="project-techs">// HTML, CSS, JavaScript</p>
+                        <a href="https://nikoladackovic.github.io/JS-mini-game/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./src/assets/pictures/project2.png" alt="Prikaz Omnifood sajta" class="project-img" loading="lazy">
+                    <div class="project-info">
+                        <h4 id="proj2-title">Omnifood sajt</h4>
+                        <p id="proj2-desc">Responzivni sajt napravljen u HTML-u i CSS-u, fokusiran na moderni dizajn i prilagođavanje svim uređajima.</p>
+                        <p class="project-techs">// HTML, CSS</p>
+                        <a href="https://nikoladackovic.github.io/Omnifood.web/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./src/assets/pictures/project3.png" alt="Prikaz igre Guess My Number" class="project-img" loading="lazy">
+                    <div class="project-info">
+                        <h4 id="proj3-title">Pogodi moj broj</h4>
+                        <p id="proj3-desc">JavaScript igrica u kojoj igrač pokušava da pogodi nasumično generisan broj uz povratne informacije u realnom vremenu.</p>
+                        <p class="project-techs">// HTML, CSS, JavaScript</p>
+                        <a href="https://nikoladackovic.github.io/Guess-my-number-/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="./src/assets/pictures/project4.png" alt="Prikaz E-commerce prodavnice" class="project-img" loading="lazy">
+                    <div class="project-info">
+                        <h4 id="proj4-title">E-commerce prodavnica</h4>
+                        <p id="proj4-desc">React aplikacija koja simulira online prodavnicu igračaka sa funkcionalnostima korpe i modernim korisničkim interfejsom.</p>
+                        <p class="project-techs">// React, JavaScript, CSS</p>
+                        <a href="https://github.com/NikolaDackovic/Shop" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-card new-project-card">
+                    <div class="project-in-progress">
+                        <h4 id="proj5-title">Portfolio generator</h4>
+                        <span class="in-progress-badge">U izradi</span>
+                    </div>
+                    <div class="project-info">
+                        <p id="proj5-desc">Ova aplikacija omogućava generisanje portfolia na osnovu unetih podataka, uz podršku za različite teme i prilagođavanja.</p>
+                        <p class="project-techs">// React, Vite, Tailwind CSS</p>
+                        <a href="#" class="project-link disabled"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="preview-section contact-section scroll-reveal" id="contact">
+            <h2 id="contact-title">Kontakt</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name" data-sr="Ime" data-en="Name">Ime</label>
+                    <input type="text" id="name" placeholder="Vaše ime" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-sr="Email" data-en="Email">Email</label>
+                    <input type="email" id="email" placeholder="vas@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-sr="Poruka" data-en="Message">Poruka</label>
+                    <textarea id="message" placeholder="Vaša poruka..." required></textarea>
+                </div>
+                <button type="submit" class="btn" id="send-btn">Pošalji poruku</button>
+            </form>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/nikola-dackovic/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/NikolaDackovic" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll to top -->
+    <button id="scroll-top-btn">
+        <svg class="progress-ring" width="50" height="50">
+            <circle class="progress-ring__bg" stroke="#cfd8dc" stroke-width="5" fill="transparent" r="20" cx="25" cy="25"/>
+            <circle class="progress-ring__progress" stroke="#3b82f6" stroke-width="5" fill="transparent" r="20" cx="25" cy="25"/>
+            <path class="progress-ring__arrow" d="M25 15 L20 25 L25 22 L30 25 Z" transform="rotate(90 25 25)" fill="#3b82f6"/>
+        </svg>
+    </button>
+</div>
+
+<footer class="site-footer">
+    <p class="footer-text">&copy; 2025 Nikola Dacković. Sva prava zadržana.</p>
+</footer>
+
+<script src="./src/script.js"></script>
+</body>
+</html>
